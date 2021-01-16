@@ -206,8 +206,8 @@ echo'{
           "template_type":"generic",
           "elements":[
             {
-              "title":"Đang thả câu...",
-              "subtitle":"Chưa có cá nào dính thính đâu. Hãy chờ tiếp bạn nhé!"
+              "title":"...Đang tìm người lạ...",
+              "subtitle":"Chưa tìm được người lạ nào. Hãy chờ tiếp bạn nhé!"
             }
           ]
         }
