@@ -74,8 +74,8 @@ function outchat($userid) {
   $partner = getRelationship($userid);
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $userid");
   mysqli_query($conn, "UPDATE `users` SET `trangthai` = 0, `ketnoi` = NULL, `hangcho` = 0 WHERE `ID` = $partner");
-  sendchat($userid,"💔 Bạn đã ngừng trò chuyện cùng với người lạ ! Để tiếp tục thả câu hãy gõ 'Start'");
-  endchat($partner,"💔 Người lạ đã thoát ! Để tiếp tục thả câu hãy gõ 'Start'");
+  sendchat($userid,"💔 Bạn đã ngừng trò chuyện cùng với người lạ ! Để tiếp tục tìm người lạ hãy gõ 'Start'");
+  endchat($partner,"💔 Người lạ đã thoát ! Để tiếp tục tìm người lạ hãy gõ 'Start'");
 }
 
 
@@ -111,7 +111,7 @@ echo'{
           "elements":[
             {
               "title":"Cảnh báo",
-              "subtitle":"Bạn chưa tìm người lạ ! Hãy gõ \'Thamgia\' để bắt đầu rắc thính nhé"
+              "subtitle":"Bạn chưa tìm người lạ ! Hãy gõ \'Start\' để bắt đầu tìm người lạ nhé"
             }
           ]
         }
@@ -130,7 +130,7 @@ echo'{
           "elements":[
             {
               "title":"Ngừng tìm",
-              "subtitle":"Bạn đã ngừng tìm người lạ ! Hãy gõ \'Thamgia\' để quay lại rắc thính"
+              "subtitle":"Bạn đã ngừng tìm người lạ ! Hãy gõ \'Start\' để quay lại tìm người lạ nhé"
             }
           ]
         }
